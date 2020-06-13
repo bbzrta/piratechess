@@ -1,14 +1,28 @@
-ul {
+body {
+  background: #FCFCFC;
+}
+
+#navbar{
+  width: 100%
+}
+#navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #dddddd
 }
- li {
+#navbar li {
   float: left;
 }
-
-ul a {
+#navbar a {
   display: block;
   padding: 8px;
   background-color: #dddddd;
+}
+
+
+#page_how {
+  height: 800px;
+  width: 100%;
+  background-color: #E5E5E5;
 }

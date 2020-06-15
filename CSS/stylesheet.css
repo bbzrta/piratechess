@@ -10,24 +10,26 @@ body{
 
 nav{
   width: 100%;
-  background-color: black;
+  background-color:  #7E7E7E;
   overflow: hidden;
   position: fixed;
   top: 0;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
-ul{
+nav ul{
   padding: 0;
   margin: 0;
   list-style: none;
+  margin: 0px auto;
+  width: 80%;
 }
 
-li{
+nav li{
   float: left;
 }
 
-a{
+nav a{
   padding: 10px;
   width: 200px;
   display: block;
@@ -35,6 +37,12 @@ a{
   color: white;
   text-transform: uppercase;
   font-weight:200;
+  text-align: center;
+
+}
+
+nav a:hover{
+  color: black;
 }
 
 div#page_home, div#page_about,
@@ -46,7 +54,7 @@ div#page_links, div#page_how{
 
 div#container{
   width: 80%;
-  padding-left, padding-right: 20px;
+  padding:0 10px;
   margin: 0px auto;
 }
 

@@ -13,20 +13,20 @@ body{
   align-items: center;
 }
 /*-----text_container-----*/
-.text_container{
 
-}
 /*-----Navbar's settings-----*/
-nav{
+#navbar{
   width: 100%;
-  background-color:  #000000;
+  background-color:  black;
   overflow: hidden;
-  position: fixed;
+  margin-bottom: 0px;
+  display: block;
   top: 0;
-  margin-bottom: 10px;
+  position: fixed;
+  transition: top 0.3s;
 }
 
-nav ul{
+#navbar ul{
   padding: 0;
   margin: 0;
   list-style: none;
@@ -34,27 +34,28 @@ nav ul{
   width: 80%;
 }
 
-nav li{
+#navbar li{
   float: left;
 }
 
-nav a{
-  padding: 10px;
-  width: 200px;
+#navbar a{
+  padding: 20px 50px;
   display: block;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
+  text-decoration: none;
 
 }
 
-nav a:hover{
+#navbar a:hover{
   color: black;
 }
 
 /*-----each page's settings-----*/
+
 div#page_landing{
   opacity: 0.5;
   height: 110vh; width: 100%;
@@ -65,16 +66,39 @@ div#page_landing{
 }
 #videogame{
   display: block;
-  margin:130px auto;
+  margin:30px auto;
   width: 50%;
+}
+#landing_heading{
+  font-size: 300px;
+  text-align: center;
+  padding: 0 0;
+  margin: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  opacity: 0.5;
 }
 
 
 div#page_home{
-  height: 100%;
   display: inline-block;
-  width: 100%; height: 110vh
-  padding
+  width: 100%; height: 100vh
+
+}
+
+div#page_how{
+  height: 100vh;
+  display: inline-block;
+  width: 80%;
+  color: inherit;
+  text-align: left;
+  float: none;
+  background-color: black;
+  opacity: 0.90;
+  color: white;
+  padding: 20px;
+  margin: 200px 9%;
+  align-self: center;
 }
 
 div#page_about{
@@ -95,11 +119,7 @@ div#page_links{
   width: 100%; height: 100vh
 }
 
-div#page_how{
-  height: 100%;
-  display: inline-block;
-  width: 100%; height: 100vh
-}
+
 
 div#container{
   width: 80%;

@@ -8,20 +8,22 @@
   </head>
   <body>
 
+<div id="navbar">
+    <ul>
+      <li><a href="#page_home">Home</a></li>
+      <li><a href="#page_how">How to Play</a></li>
+      <li><a href="#page_about">About me</a></li>
+      <li><a href="#page_contacts">contacts</a></li>
+      <li><a href="#page_links">links</a></li>
+    </ul>
+  </div>
+
+
 
 <!--Landing page is not in the container-->
+
     <div id="page_landing">
-      <!--smooth scroll down navbar-->
-      <nav class="navbar">
-        <ul>
-          <li><a href="#page_home">Home</a></li>
-          <li><a href="#page_how">How to Play</a></li>
-          <li><a href="#page_about">About me</a></li>
-          <li><a href="#page_contacts">contacts</a></li>
-          <li><a href="#page_links">links</a></li>
-        </ul>
-      </nav>
-      <br>
+
     </div>
 
 <div id="container">
@@ -29,6 +31,7 @@
 
 
     <div id="page_home">
+      <h1 id="landing_heading">Pirate Chess</h1>
       <img src="..\media\images\piratechess.PNG" alt="piratechess" id="videogame">
     </div>
     <div id="page_how">
@@ -69,6 +72,20 @@
       <h1>List of my links</h1>
     </div>
 </div>
+<script type="text/javascript">
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 
+</script>
   </body>
 </html>

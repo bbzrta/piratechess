@@ -1,138 +1,43 @@
-html{
-  scroll-behavior: smooth;
+body,html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Pirata One', cursive;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  background-color: black;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway', sans-serif;
-  background-image: url("../media/images/goldenskull.JPG");
+.pimg1, .pimg2, .pimg3{
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  align-items: center;
-}
-/*-----text_container-----*/
-
-/*-----Navbar's settings-----*/
-#navbar{
-  width: 100%;
-  background-color:  black;
-  overflow: hidden;
-  margin-bottom: 0px;
-  display: block;
-  top: 0;
-  position: fixed;
-  transition: top 0.3s;
 }
 
-#navbar ul{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin: 0px auto;
-  width: 80%;
+.pimg1{
+  background-image: url('../media/images/goldenskull.JPG ');
+  min-height: 100%;
 }
 
-#navbar li{
-  float: left;
+.pimg2{
+  background-image: url('../media/images/chess.jpg');
+  min-height: 400px;
 }
 
-#navbar a{
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: left;
-  text-decoration: none;
-
+.pimg3{
+  background-image: url('../media/images/Pirate.jpg');
+  min-height: 400px;
 }
 
-#navbar a:hover{
-  color: black;
-}
-
-/*-----each page's settings-----*/
-
-div#page_landing{
-  opacity: 0.5;
-  height: 110vh; width: 100%;
-  display: inline-block;
-  background-color: black;
-  margin: 0;
-  padding: 0;
-}
-#videogame{
-  display: block;
-  margin:30px auto;
-  width: 50%;
-}
-#landing_heading{
-  font-size: 300px;
+.section{
   text-align: center;
-  padding: 0 0;
-  margin: 20px;
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  opacity: 0.5;
+  padding: 50px 80px;
 }
 
-
-div#page_home{
-  display: inline-block;
-  width: 100%; height: 100vh
+.section-light{
 
 }
-
-div#page_how{
-  height: 100vh;
-  display: inline-block;
-  width: 80%;
-  color: inherit;
-  text-align: left;
-  float: none;
-  background-color: black;
-  opacity: 0.90;
-  color: white;
-  padding: 20px;
-  margin: 200px 9%;
-  align-self: center;
-}
-
-div#page_about{
-  height: 100%;
-  display: inline-block;
-  width: 100%; height: 100vh
-}
-
-div#page_contacts{
-  height: 100%;
-  display: inline-block;
-  width: 100%; height: 100vh
-}
-
-div#page_links{
-  height: 100%;
-  display: inline-block;
-  width: 100%; height: 100vh
-}
-
-
-
-div#container{
-  width: 80%;
-  padding:0 10px;
-  margin: 0px auto;
-}
-
-
-
-
-
-
-
-
-/*-----custom fonts-----*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,500&display=swap');
